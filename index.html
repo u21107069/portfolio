@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Our Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffc0f3, #b39ddb, #81d4fa);
+      color: #3e3e3e;
+      animation: bgMove 15s infinite alternate;
+      background-size: 400% 400%;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 3px solid #ce93d8;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #9c27b0;
+      text-shadow: 2px 2px #fce4ec;
+      animation: floatIn 1s ease-out;
+    }
+
+    @keyframes floatIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 0.6rem 1.2rem;
+      background: linear-gradient(to right, #ec407a, #7e57c2);
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    nav a:hover {
+      transform: scale(1.1);
+      background: linear-gradient(to right, #ba68c8, #64b5f6);
+    }
+
+    .content {
+      padding: 2rem;
+    }
+
+    .image-area {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .image-area h2 {
+      font-size: 2.2rem;
+      color: #ab47bc;
+      margin-bottom: 1rem;
+    }
+
+    .image-area p {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #6a1b9a;
+    }
+
+    .about-section {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #7b1fa2;
+    }
+
+    .photo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .photo-card {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 1rem;
+      border-radius: 15px;
+      width: 160px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+    }
+
+    .photo-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+      background-color: #e1bee7;
+    }
+
+    .photo-card p {
+      font-weight: bold;
+      color: #6a1b9a;
+    }
+
+    .photo-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .buttons {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .buttons a {
+      background: linear-gradient(to right, #f06292, #9575cd);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      margin: 0 0.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .buttons a:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      color: #6a1b9a;
+    }
+
+    @media (max-width: 600px) {
+      .photo-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .photo-card {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Project</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#about">About Us</a>
+    <a href="tala.html">Tala</a>
+    <a href="razanss.html">Razan</a>
+    <a href="mawadas.html">Mawada</a>
+    <a href="aya.html">Aya</a>
+    <a href="mariam.html">Mariam</a>
+  </nav>
+
+  <div class="content">
+    <div class="image-area">
+      <h2>Introduction</h2>
+      <p>Welcome to our colorful corner of the web! 💻✨
+We're a team of five passionate students who came together to create something special — a website that reflects not only our skills, but also our personalities, teamwork, and creativity. Each page is designed with love, filled with pastel vibes, and showcases the individual talents of Tala, Razan, Mawada, Aya, and Mariam. This project is more than just code — it's a celebration of collaboration, growth, and a lot of laughter along the way 💖🌈</p>
+    </div>
+
+    <div class="about-section">
+      <h2>About Us</h2>
+      <div class="photo-grid">
+        <a href="tala.html" class="photo-card">
+          <img src="tala.jpg" alt="Tala">
+          <p>Tala</p>
+        </a>
+
+        <a href="razanss.html" class="photo-card">
+          <img src="razan-photo.jpg.jpeg" alt="Razan">
+          <p>Razan</p>
+        </a>
+
+        <a href="mawadas.html" class="photo-card">
+          <img src="mawada.jpg" alt="Mawada">
+          <p>Mawada</p>
+        </a>
+
+        <a href="aya.html" class="photo-card">
+		 <img src="aya.jpg" alt="Aya">
+          <p>Aya</p>
+        </a>
+
+        <a href="mariam.html" class="photo-card">
+          <img src="mariam.jpg" alt="Mariam">
+          <p>Mariam</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- 🌟 Project Goals Section -->
+    <div class="image-area">
+      <h2>🎯 Our Project Goals</h2>
+      <p>We wanted to create something magical — a site where each member has their own space to shine, and where fun, color, and creativity come together. 🌸</p>
+    </div>
+
+    <!-- 💖 Fun Facts Section -->
+    <div class="about-section">
+      <h2>💫 Fun Facts About Us</h2>
+      <ul>
+        <li>🌸 Tala is the queen of design flair and detail!</li>
+        <li>🎵 Razan always keeps us energized with her playlists!</li>
+        <li>🦋 Mawada adds pastel sparkle to everything!</li>
+        <li>📸 Aya takes the cutest photos!</li>
+        <li>📚 Mariam keeps our ideas organized and sharp!</li>
+      </ul>
+    </div>
+
+    <!-- 📷 Photo Memories Gallery -->
+    <div class="about-section" id="about">
+      <h2>📷 Photo Memories</h2>
+      <div class="photo-grid">
+        <div class="photo-card">
+          <img src="gallery1.jpg" alt="Memory 1">
+          <p>Behind the scenes</p>
+        </div>
+        <div class="photo-card">
+          <img src="gallery2.jpg" alt="Memory 2">
+          <p>Team moment ✨</p>
+        </div>
+        <div class="photo-card">
+          <img src="gallery3.jpg" alt="Memory 3">
+          <p>Goofy selfie 💕</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <a href="index.html">Home</a>
+    <a href="#about">About Us</a>
+  </div>
+</body>
+</html>

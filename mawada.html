@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aya’s Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffc0f3, #b39ddb, #81d4fa);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #3e3e3e;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #9c27b0;
+      text-shadow: 1px 1px #fce4ec;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.6rem 1.2rem;
+      color: #fff;
+      border-radius: 30px;
+      background: linear-gradient(to right, #ec407a, #7e57c2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #ba68c8, #64b5f6);
+    }
+
+    .main {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .intro-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+      gap: 2rem;
+    }
+
+    .intro-section img {
+      width: 180px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .intro-text {
+      flex: 1;
+    }
+
+    .intro-text h2 {
+      color: #7e57c2;
+      margin-bottom: 1rem;
+    }
+
+    .intro-text p {
+      font-size: 1.1rem;
+      color: #5e357a;
+    }
+
+    .video-area {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .video-area h3 {
+      font-size: 1.6rem;
+      color: #6a1b9a;
+      margin-bottom: 1rem;
+    }
+
+    .video-area iframe {
+      width: 90%;
+      max-width: 700px;
+      height: 400px;
+      border-radius: 15px;
+      border: none;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .hobbies-section {
+      margin-top: 4rem;
+    }
+
+    .hobbies-section h3 {
+      text-align: center;
+      color: #7b1fa2;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .hobby-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .hobby-item {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      width: 250px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .hobby-item img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+    }
+
+    .hobby-item p {
+      color: #5e357a;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background: linear-gradient(to right, #f06292, #9575cd);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      margin: 0 10px;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .buttons a:hover {
+      transform: translateY(-4px);
+    }
+
+    @media (max-width: 768px) {
+      .intro-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .intro-section img {
+        width: 60%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Mawada's Page</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">About Us</a>
+    <a href="tala.html">Tala</a>
+    <a href="razan.html">Razan</a>
+    <a href="mawada.html">Mawada</a>
+    <a href="aya.html">Aya</a>
+    <a href="mariam.html">Mariam</a>
+  </nav>
+
+  <div class="main">
+
+    <!-- Intro + Image -->
+    <div class="intro-section">
+    <img src="me.jpeg" width="300" height="250" alt=""/>
+<div class="intro-text">
+      <h2>Meet mawada 💜</h2>
+        <p>Hello, I’m Mawada, a second-year Mass Communication student currently in my second semester. I’ve always been drawn to the power of media and how it brings people together, shares stories, and influences the world around us. Studying Mass Comm has opened my eyes to new perspectives and given me so many chances to grow and collaborate with others. I enjoy expressing ideas creatively, learning new tools and skills, and being part of projects that make an impact. My goal is to finish my degree and work in a media company where I can turn my ideas into real-world content and continue growing in the field. Thanks for stopping by!</p>
+      </div>
+    </div>
+
+    <!-- Video -->
+  <div class="section video-section">
+    <h2>Watch My Video 🎥</h2>
+    <video controls style="max-width: 100%; height: auto;">
+        <source src="Self-intro Video (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  </div>
+    <!-- Hobbies Section -->
+    <div class="hobbies-section">
+      <h3>More about me 🎬💖</h3>
+      <div class="hobby-grid">
+        <div class="hobby-item">
+          <img src="me 2.png" width="40" height="" alt="">
+          <p>I have many hobbies that keep me busy and inspired such as Swimming helps me stay active and relaxed, hair care enjoy exploring routines and products that keep my hair healthy. I also love coloring empty drawings; it’s a calming activity that helps me relax and clear my mind.
+</p>
+        </div>
+        <div class="hobby-item">
+        <img src="me 3.png" width="40" height="" alt=""/> 
+          <p>Some of my skills and fun facts: I’m smart and a quick learner, and when I want to find something out—I always do. You could say I’m a bit of a “silent stalker,” always observing, thinking, and quietly connecting the dots.
+
+.</p>
+        </div>
+        <div class="hobby-item">
+         <img src="me 4.png" width="40" height="" alt=""/> 
+          <p>I chose the University of Sharjah for its strong academic reputation and quality education in Mass Communication. The UAE’s growing media industry offers great career opportunities, and the program’s mix of theory and practice aligns with my passion for media and communication.
+
+
+
+
+
+
+
+
+.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <a href="index.html">🏠 Home</a>
+      <a href="#">👭 About Us</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
